@@ -45,7 +45,7 @@ faqItems.forEach((item) => {
 const sr = ScrollReveal({
     origin: "bottom",
     distance: "60px",
-    duration: 3000,
+    duration: 1000,
     delay: 600,
 });
 
