@@ -1,0 +1,1694 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="assets/css/estilos.css" />
+        <!-- Iconos -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css"
+        />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Swipper CSS -->
+        <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    </head>
+    <body>
+        <header class="py-8 lg:pt-6 lg:pb-14">
+            <div
+                class="container mx-auto lg:relative flex flex-col lg:flex-row lg:justify-between gap-y-4 lg:gap-y-0"
+            >
+                <!-- Logo -->
+                <div class="flex justify-center lg:justify-normal">
+                    <a href="#">
+                        <img src="assets/img/header/logo.svg" alt="" />
+                    </a>
+                </div>
+
+                <div
+                    class="flex flex-col gap-y-4 lg:flex-row lg:gap-x-10 lg:gap-y-0"
+                >
+                    <!-- Ubicación -->
+                    <div
+                        class="flex justify-center items-center gap-x-2 lg:justify-normal"
+                    >
+                        <i
+                            class="ri-map-pin-2-fill text-2xl text-astral-900"
+                        ></i>
+                        <div class="text-secondary">Calle XXX, Santiago</div>
+                    </div>
+                    <!-- Teléfono -->
+                    <div
+                        class="flex justify-center items-center gap-x-2 lg:justify-normal"
+                    >
+                        <i class="ri-phone-fill text-2xl text-astral-900"></i>
+                        <div class="text-secondary">+56 9 1234 5678</div>
+                    </div>
+
+                    <!-- <button
+                        class="btn btn-sm btn-outline w-[240px] lg:w-auto mx-auto lg:mx-0"
+                    >
+                        Agendar Hora
+                    </button> -->
+
+                    <!-- Mobile Nav -->
+                    <nav
+                        class="mnav bg-white fixed w-[300px] top-0 h-screen -left-[300px] shadow-2xl lg:hidden transition-all duration-300 z-20"
+                    >
+                        <!-- Nav Trigger btn -->
+                        <div
+                            class="mnav__close-btn bg-primary w-8 h-8 relative -right-full top-8 flex justify-center items-center rounded-tr-lg rounded-br-lg cursor-pointer transition-all"
+                        >
+                            <i
+                                class="mnav__close-btn-icon ri-arrow-right-s-line text-2xl text-white"
+                            ></i>
+                        </div>
+
+                        <!-- Logo, Listas, Forms -->
+                        <div class="px-12 flex flex-col gap-y-12 h-full">
+                            <!-- Logo -->
+                            <a href="#">
+                                <img
+                                    src="assets/img/header/logo.svg"
+                                    alt="Logo"
+                                />
+                            </a>
+
+                            <!-- Listas -->
+                            <ul>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-secondary hover:text-astral-900 transition-all duration-300"
+                                    >
+                                        Inicio
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-secondary hover:text-astral-900 transition-all duration-300"
+                                    >
+                                        Equipo
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-secondary hover:text-astral-900 transition-all duration-300"
+                                    >
+                                        Faq's
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-secondary hover:text-astral-900 transition-all duration-300"
+                                    >
+                                        Servicios
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-secondary hover:text-astral-900 transition-all duration-300"
+                                    >
+                                        Blogs
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- Formulario -->
+                            <!-- <form class="relative flex gap-x-[10px]">
+                                <label for="mnav-search-input">
+                                    <i
+                                        class="ri-search-line text-2xl text-astral-900"
+                                    ></i>
+                                </label>
+                                <input
+                                    type="text"
+                                    id="mnav-search-input"
+                                    placeholder="Buscar..."
+                                    class="outline-none w-[160px] border-b-2 focus:border-b-2 focus:border-astral-900 placeholder:italic"
+                                />
+                            </form> -->
+                        </div>
+                    </nav>
+
+                    <!-- Desktop Nav -->
+                    <nav
+                        class="bg-white absolute w-full left-0 -bottom-[86px] shadow-custom1 h-16 rounded-[10px] hidden lg:flex lg:items-center lg:justify-between lg:px-[50px]"
+                    >
+                        <ul class="flex gap-x-4">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="border-r pr-4 text-secondary hover:text-astral-900 transition-all duration-300"
+                                >
+                                    Inicio
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="border-r pr-4 text-secondary hover:text-astral-900 transition-all duration-300"
+                                >
+                                    Equipo
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="border-r pr-4 text-secondary hover:text-astral-900 transition-all duration-300"
+                                >
+                                    Faq's
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="border-r pr-4 text-secondary hover:text-astral-900 transition-all duration-300"
+                                >
+                                    Servicios
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="border-r pr-4 text-secondary hover:text-astral-900 transition-all duration-300"
+                                >
+                                    Blogs
+                                </a>
+                            </li>
+                        </ul>
+
+                        <form class="relative flex gap-x-[10px]">
+                            <label for="search-input">
+                                <i
+                                    class="ri-search-line text-2xl text-astral-900"
+                                ></i>
+                            </label>
+                            <input
+                                type="text"
+                                name=""
+                                id="search-input"
+                                placeholder="Buscar..."
+                                class="outline-none w-[100px] focus:w-[180px] focus:border-b-2 focus:border-astral-900 placeholder:italic placeholder:text-base transition-all duration-150"
+                            />
+                        </form>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero bg-gray-50 py-12 xl:pt-12 xl:pb-0 overflow-hidden">
+            <div class="container mx-auto h-full">
+                <!-- Texto e Imagenes -->
+                <div
+                    class="flex flex-col xl:flex-row items-center justify-between h-full"
+                >
+                    <!-- Texto -->
+                    <div class="hero__text xl:w-[48%] text-center xl:text-left">
+                        <!-- Badge -->
+                        <div
+                            class="flex items-center bg-white py-[10px] px-[20px] w-max gap-x-2 mb-[26px] rounded-full mx-auto xl:mx-0"
+                        >
+                            <i
+                                class="ri-heart-pulse-line text-2xl text-astral-900"
+                            >
+                                <div
+                                    class="uppercase text-base font-medium text-[#9ab4b7] tracking-[2.24px]"
+                                >
+                                    Aca un texto
+                                </div>
+                            </i>
+                        </div>
+                        <!-- Título -->
+                        <h1 class="h1 mb-6 text-matisse-800">Título</h1>
+                        <!-- Desc -->
+                        <p class="mb-[42px] md:max-w-xl">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Nemo excepturi repellat, quae accusantium
+                            aliquid, possimus aut officiis, vitae exercitationem
+                            voluptatibus mollitia necessitatibus sequi veniam ea
+                            perspiciatis. Ipsa temporibus enim velit.
+                        </p>
+
+                        <button class="btn btn-lg btn-astral mx-auto xl:mx-0">
+                            Contactanos
+                        </button>
+                    </div>
+                    <!-- Imágen -->
+                    <div
+                        class="hero__img hidden xl:flex max-w-[814px] self-end"
+                    >
+                        <img
+                            src="assets/img/hero/img_notebook.png"
+                            alt="Hero"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin Hero -->
+
+        <!-- Stats -->
+        <section class="stats section">
+            <div class="container mx-auto">
+                <!-- Wrapper -->
+                <div class="flex flex-col xl:flex-row gap-y-6 justify-between">
+                    <!-- Item -->
+                    <div
+                        class="stats__item flex-1 xl:border-r flex flex-col items-center"
+                    >
+                        <div
+                            class="text-4xl xl:text-[64px] font-semibold text-matisse-500 xl:mb-2"
+                        >
+                            +9570
+                        </div>
+                        <div class="">Clientes felices</div>
+                    </div>
+                    <!-- Item -->
+                    <div
+                        class="stats__item flex-1 xl:border-r flex flex-col items-center"
+                    >
+                        <div
+                            class="text-4xl xl:text-[64px] font-semibold text-matisse-500 xl:mb-2"
+                        >
+                            26
+                        </div>
+                        <div class="">Proyectos activos</div>
+                    </div>
+                    <!-- Item -->
+                    <div
+                        class="stats__item flex-1 xl:border-r flex flex-col items-center"
+                    >
+                        <div
+                            class="text-4xl xl:text-[64px] font-semibold text-matisse-500 xl:mb-2"
+                        >
+                            +53
+                        </div>
+                        <div class="">Otras Opciones</div>
+                    </div>
+                    <!-- Item -->
+                    <div class="stats__item flex-1 flex flex-col items-center">
+                        <div
+                            class="text-4xl xl:text-[64px] font-semibold text-matisse-500 xl:mb-2"
+                        >
+                            +10
+                        </div>
+                        <div class="">Años de servicio</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin Stats -->
+
+        <!-- Servicios -->
+        <section class="servicios">
+            <!-- BG -->
+            <div
+                class="bg-astral-900 bg-cover bg-no-repeat max-w-[1466px] mx-4 xl:mx-auto rounded-[20px] xl:pt-[70px] px-6 xl:px-0 relative h-[368px] flex items-center xl:items-start -z-10"
+            >
+                <div class="container mx-auto">
+                    <!-- Texto -->
+                    <div
+                        class="services__top flex items-center flex-col xl:flex-row xl:mb-[60px]"
+                    >
+                        <div
+                            class="services__top flex items-center flex-col xl:flex-row xl:mb-[60px]"
+                        >
+                            <h2
+                                class="h2 text-white flex-1 mb-4 xl:mb-0 text-center xl:text-left"
+                            >
+                                El mejor servicio para tu empresa
+                            </h2>
+                            <p
+                                class="text-white flex-1 text-center xl:text-left max-w-2xl xl:max-w-none"
+                            >
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Tempora minima quas, labore
+                                eaque at quia quae, recusandae eligendi porro
+                                temporibus atque accusantium doloribus
+                                blanditiis rerum soluta, similique vitae
+                                distinctio commodi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid COntainer -->
+            <div class="container mx-auto mt-8 xl:-mt-[144px]">
+                <!-- Grid -->
+                <div class="grid xl:grid-cols-4 gap-5 px-8 xl:px-0">
+                    <!-- Grid Item -->
+                    <div
+                        class="services__item bg-white p-[30px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center"
+                    >
+                        <!-- Grid Items Icon -->
+                        <div class="mb-[15px]">
+                            <img
+                                src="assets/icons/services/icon-1.svg"
+                                alt="Servicio"
+                            />
+                        </div>
+
+                        <h3 class="h3 mb-[10px]">General</h3>
+
+                        <p class="font-light leading-normal max-w-[300px]">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit.
+                        </p>
+                    </div>
+
+                    <div
+                        class="services__item bg-white p-[30px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center"
+                    >
+                        <!-- Grid Items Icon -->
+                        <div class="mb-[15px]">
+                            <img
+                                src="assets/icons/services/icon-2.svg"
+                                alt="Servicio"
+                            />
+                        </div>
+
+                        <h3 class="h3 mb-[10px]">General</h3>
+
+                        <p class="font-light leading-normal max-w-[300px]">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit.
+                        </p>
+                    </div>
+
+                    <div
+                        class="services__item bg-white p-[30px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center"
+                    >
+                        <!-- Grid Items Icon -->
+                        <div class="mb-[15px]">
+                            <img
+                                src="assets/icons/services/icon-3.svg"
+                                alt="Servicio"
+                            />
+                        </div>
+
+                        <h3 class="h3 mb-[10px]">General</h3>
+
+                        <p class="font-light leading-normal max-w-[300px]">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit.
+                        </p>
+                    </div>
+
+                    <div
+                        class="services__item bg-white p-[30px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center"
+                    >
+                        <!-- Grid Items Icon -->
+                        <div class="mb-[15px]">
+                            <img
+                                src="assets/icons/services/icon-4.svg"
+                                alt="Servicio"
+                            />
+                        </div>
+
+                        <h3 class="h3 mb-[10px]">General</h3>
+
+                        <p class="font-light leading-normal max-w-[300px]">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin Servicios -->
+
+        <!-- Citas -->
+        <section class="appointment section">
+            <div class="container mx-auto">
+                <!-- Título -->
+                <h2
+                    class="appointment__title h2 mb-5 xl:mb-[50px] text-center xl:text-left text-matisse-800"
+                >
+                    Agenda ahora o llama al
+                    <span class="text-matisse-500">+56 9 1234 5678</span>
+                </h2>
+
+                <form class="appointment__form flex flex-col gap-y-5">
+                    <!-- Select wrapper -->
+                    <div class="flex flex-col xl:flex-row gap-5">
+                        <!-- Select 1 -->
+                        <div class="select relative flex items-center">
+                            <!-- Icono -->
+                            <div class="absolute right-4">
+                                <i class="ri-arrow-down-s-line"></i>
+                            </div>
+
+                            <select
+                                class="appearance-none outline-none h-full w-full bg-transparent px-4"
+                            >
+                                <option value="" selected disabled>
+                                    Seleccione Departamento
+                                </option>
+                                <option value="1">Departament 1</option>
+                                <option value="2">Departament 2</option>
+                                <option value="3">Departament 3</option>
+                                <option value="4">Departament 4</option>
+                            </select>
+                        </div>
+                        <div class="select relative flex items-center">
+                            <!-- Icono -->
+                            <div class="absolute right-4">
+                                <i class="ri-arrow-down-s-line"></i>
+                            </div>
+                            <!-- Select 2 -->
+                            <select
+                                class="appearance-none outline-none h-full w-full bg-transparent px-4"
+                            >
+                                <option value="" selected disabled>
+                                    Seleccione Doctor
+                                </option>
+                                <option value="1">Dr 1</option>
+                                <option value="2">Dr 2</option>
+                                <option value="3">Dr 3</option>
+                                <option value="4">Dr 4</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Input-Wrapper -->
+                    <div class="flex flex-col xl:flex-row gap-5">
+                        <input
+                            type="text"
+                            name=""
+                            id=""
+                            class="input"
+                            placeholder="Nombre Paciente"
+                        />
+                        <input
+                            type="text"
+                            name=""
+                            id=""
+                            class="input"
+                            placeholder="Número de Teléfono"
+                        />
+                    </div>
+
+                    <div class="flex flex-col xl:flex-row gap-5">
+                        <input type="date" name="" id="" class="input" />
+                        <input type="time" name="" id="" class="input" />
+                    </div>
+
+                    <!-- Btn -->
+                    <button
+                        class="btn btn-lg btn-astral-900 self-end"
+                        type="submit"
+                    >
+                        Agendar
+                    </button>
+                </form>
+            </div>
+        </section>
+        <!-- FIn Citas -->
+
+        <!-- Testimonios -->
+        <section
+            class="textimonial bg-testimonials bg-cover bg-right bg-no-repeat py-12 xl:min-h-[595px] xl:py-0"
+        >
+            <div class="testimonial__container container mx-auto">
+                <div class="flex flex-col items-center gap-x-14 xl:flex-row">
+                    <!-- Img -->
+                    <div class="hidden xl:flex">
+                        <img
+                            src="assets/img/testimonials/img.png"
+                            alt="Testimonios-background"
+                        />
+                    </div>
+
+                    <!-- Slider -->
+                    <div class="max-w-[98%] xl:max-w-[710px]">
+                        <div class="swiper h-[400px]">
+                            <!-- Wappers adicionales -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides 1 -->
+                                <div class="swiper-slide">
+                                    <div
+                                        class="h-full flex flex-col justify-center items-start"
+                                    >
+                                        <div
+                                            class="max-w-[680px] mx-auto text-center xl:text-left"
+                                        >
+                                            <!-- Mensaje -->
+                                            <p
+                                                class="font-light relative text-[22px] text-[#4c5354] leading-[190%] text-center xl:text-left before:bg-quoteLeft before:bg-contain before:bg-bottom before:inline-block before:top-0 before:w-10 before:h-10 before:bg-no-repeat after:bg-quoteRight after:bg-contain after:bg-bottom after:inline-block after:top-0 after:w-10 after:h-10 after:bg-no-repeat mb-7"
+                                            >
+                                                <span class="mx-2"
+                                                    >Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing
+                                                    elit. Ab asperiores
+                                                    molestias tempora architecto
+                                                    labore dignissimos accusamus
+                                                    sapiente harum. Ad quisquam
+                                                    recusandae sunt quod labore.
+                                                    Accusantium esse blanditiis
+                                                    provident assumenda
+                                                    fugit?</span
+                                                >
+                                            </p>
+
+                                            <div
+                                                class="text-[26px] text-[#4c5354] font-semibold"
+                                            >
+                                                James Rodrigo
+                                            </div>
+
+                                            <div
+                                                class="text-[#9ab4b7] font-medium uppercase tracing-[2.24px]"
+                                            >
+                                                Customer
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Slides 1 -->
+                                <div class="swiper-slide">
+                                    <div
+                                        class="h-full flex flex-col justify-center items-start"
+                                    >
+                                        <div
+                                            class="max-w-[680px] mx-auto text-center xl:text-left"
+                                        >
+                                            <!-- Mensaje -->
+                                            <p
+                                                class="font-light relative text-[22px] text-[#4c5354] leading-[190%] text-center xl:text-left before:bg-quoteLeft before:bg-contain before:bg-bottom before:inline-block before:top-0 before:w-10 before:h-10 before:bg-no-repeat after:bg-quoteRight after:bg-contain after:bg-bottom after:inline-block after:top-0 after:w-10 after:h-10 after:bg-no-repeat mb-7"
+                                            >
+                                                <span class="mx-2"
+                                                    >Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing
+                                                    elit. Ab asperiores
+                                                    molestias tempora architecto
+                                                    labore dignissimos accusamus
+                                                    sapiente harum. Ad quisquam
+                                                    recusandae sunt quod labore.
+                                                    Accusantium esse blanditiis
+                                                    provident assumenda
+                                                    fugit?</span
+                                                >
+                                            </p>
+
+                                            <div
+                                                class="text-[26px] text-[#4c5354] font-semibold"
+                                            >
+                                                James Rodrigo
+                                            </div>
+
+                                            <div
+                                                class="text-[#9ab4b7] font-medium uppercase tracing-[2.24px]"
+                                            >
+                                                Customer
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Paginación -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- Botones de paginación -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                            <!-- Scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin Testimonios -->
+
+        <!-- Equipo -->
+        <section class="team section">
+            <div class="container mx-auto">
+                <!-- Titulo -->
+                <h2
+                    class="team__title h2 mb-[50px] text-center xl:text-left text-matisse-800"
+                >
+                    Nuestro Equipo
+                </h2>
+
+                <!-- Slider -->
+                <div class="team__slider swiper min-h-[400px]">
+                    <!-- <div class="swiper h-[400px]"> -->
+                    <!-- Wappers adicionales -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides 1 -->
+                        <div class="swiper-slide">
+                            <div class="flex flex-col md:flex-row gap-9">
+                                <!-- Item -->
+                                <div class="flex-1 flex flex-col xl:flex-row">
+                                    <div
+                                        class="flex flex-col xl:flex-row items-center gap-[30px]"
+                                    >
+                                        <!-- Img -->
+                                        <div class="flex-1">
+                                            <img
+                                                src="assets/img/team/doctor-1.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <!-- Info -->
+                                        <div class="flex-1 flex flex-col">
+                                            <!-- Nombre -->
+                                            <h4 class="h4 mb-[10px]">
+                                                Nombre 1
+                                            </h4>
+                                            <!-- Cargo -->
+                                            <div
+                                                class="font-medium uppercase tracking-[2.24px] text-[#9ab4b7] mb-[20px]"
+                                            >
+                                                Cargo 1
+                                            </div>
+                                            <!-- Desc -->
+                                            <p
+                                                class="font-light mb-[26px] max-w-[320px]"
+                                            >
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipisicing elit.
+                                            </p>
+                                            <!-- Social -->
+                                            <div
+                                                class="flex items-center text-[30px] gap-x-5 text-matisse-500"
+                                            >
+                                                <a
+                                                    href="#"
+                                                    class="cursor-pointer hover:text-astral-900"
+                                                >
+                                                    <i
+                                                        class="ri-youtube-fill"
+                                                    ></i>
+                                                </a>
+                                                <a
+                                                    href="#"
+                                                    class="cursor-pointer hover:text-astral-900"
+                                                >
+                                                    <i
+                                                        class="ri-facebook-circle-fill"
+                                                    ></i>
+                                                </a>
+                                                <a
+                                                    href="#"
+                                                    class="cursor-pointer hover:text-astral-900"
+                                                >
+                                                    <i
+                                                        class="ri-instagram-fill"
+                                                    ></i>
+                                                </a>
+                                                <a
+                                                    href="#"
+                                                    class="cursor-pointer hover:text-astral-900"
+                                                >
+                                                    <i
+                                                        class="ri-pinterest-fill"
+                                                    ></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item -->
+                                <div class="flex-1 flex flex-col xl:flex-row">
+                                    <div
+                                        class="flex flex-col xl:flex-row items-center gap-[30px]"
+                                    >
+                                        <!-- Img -->
+                                        <div class="flex-1">
+                                            <img
+                                                src="assets/img/team/doctor-2.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <!-- Info -->
+                                        <div class="flex-1 flex flex-col">
+                                            <!-- Nombre -->
+                                            <h4 class="h4 mb-[10px]">
+                                                Nombre 2
+                                            </h4>
+                                            <!-- Cargo -->
+                                            <div
+                                                class="font-medium uppercase tracking-[2.24px] text-[#9ab4b7] mb-[20px]"
+                                            >
+                                                Cargo 2
+                                            </div>
+                                            <!-- Desc -->
+                                            <p
+                                                class="font-light mb-[26px] max-w-[320px]"
+                                            >
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipisicing elit.
+                                            </p>
+                                            <!-- Social -->
+                                            <div
+                                                class="flex items-center text-[30px] gap-x-5 text-matisse-500"
+                                            >
+                                                <a
+                                                    href="#"
+                                                    class="cursor-pointer hover:text-astral-900"
+                                                >
+                                                    <i
+                                                        class="ri-youtube-fill"
+                                                    ></i>
+                                                </a>
+                                                <a
+                                                    href="#"
+                                                    class="cursor-pointer hover:text-astral-900"
+                                                >
+                                                    <i
+                                                        class="ri-facebook-circle-fill"
+                                                    ></i>
+                                                </a>
+                                                <a
+                                                    href="#"
+                                                    class="cursor-pointer hover:text-astral-900"
+                                                >
+                                                    <i
+                                                        class="ri-instagram-fill"
+                                                    ></i>
+                                                </a>
+                                                <a
+                                                    href="#"
+                                                    class="cursor-pointer hover:text-astral-900"
+                                                >
+                                                    <i
+                                                        class="ri-pinterest-fill"
+                                                    ></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slides 2 -->
+                        <div class="swiper-slide">
+                            <div class="flex flex-col md:flex-row gap-9">
+                                <!-- Item -->
+                                <div class="flex-1 flex flex-col xl:flex-row">
+                                    <div
+                                        class="flex flex-col xl:flex-row items-center gap-[30px]"
+                                    >
+                                        <!-- Img -->
+                                        <div class="flex-1">
+                                            <img
+                                                src="assets/img/team/doctor-1.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <!-- Info -->
+                                        <div class="flex-1 flex flex-col">
+                                            <!-- Nombre -->
+                                            <h4 class="h4 mb-[10px]">
+                                                Nombre 1
+                                            </h4>
+                                            <!-- Cargo -->
+                                            <div
+                                                class="font-medium uppercase tracking-[2.24px] text-[#9ab4b7] mb-[20px]"
+                                            >
+                                                Cargo 1
+                                            </div>
+                                            <!-- Desc -->
+                                            <p
+                                                class="font-light mb-[26px] max-w-[320px]"
+                                            >
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipisicing elit.
+                                            </p>
+                                            <!-- Social -->
+                                            <div
+                                                class="flex items-center text-[30px] gap-x-5 text-matisse-500"
+                                            >
+                                                <a
+                                                    href="#"
+                                                    class="cursor-pointer hover:text-astral-900"
+                                                >
+                                                    <i
+                                                        class="ri-youtube-fill"
+                                                    ></i>
+                                                </a>
+                                                <a
+                                                    href="#"
+                                                    class="cursor-pointer hover:text-astral-900"
+                                                >
+                                                    <i
+                                                        class="ri-facebook-circle-fill"
+                                                    ></i>
+                                                </a>
+                                                <a
+                                                    href="#"
+                                                    class="cursor-pointer hover:text-astral-900"
+                                                >
+                                                    <i
+                                                        class="ri-instagram-fill"
+                                                    ></i>
+                                                </a>
+                                                <a
+                                                    href="#"
+                                                    class="cursor-pointer hover:text-astral-900"
+                                                >
+                                                    <i
+                                                        class="ri-pinterest-fill"
+                                                    ></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item -->
+                                <div class="flex-1 flex flex-col xl:flex-row">
+                                    <div
+                                        class="flex flex-col xl:flex-row items-center gap-[30px]"
+                                    >
+                                        <!-- Img -->
+                                        <div class="flex-1">
+                                            <img
+                                                src="assets/img/team/doctor-2.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <!-- Info -->
+                                        <div class="flex-1 flex flex-col">
+                                            <!-- Nombre -->
+                                            <h4 class="h4 mb-[10px]">
+                                                Nombre 2
+                                            </h4>
+                                            <!-- Cargo -->
+                                            <div
+                                                class="font-medium uppercase tracking-[2.24px] text-[#9ab4b7] mb-[20px]"
+                                            >
+                                                Cargo 2
+                                            </div>
+                                            <!-- Desc -->
+                                            <p
+                                                class="font-light mb-[26px] max-w-[320px]"
+                                            >
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipisicing elit.
+                                            </p>
+                                            <!-- Social -->
+                                            <div
+                                                class="flex items-center text-[30px] gap-x-5 text-matisse-500"
+                                            >
+                                                <a
+                                                    href="#"
+                                                    class="cursor-pointer hover:text-astral-900"
+                                                >
+                                                    <i
+                                                        class="ri-youtube-fill"
+                                                    ></i>
+                                                </a>
+                                                <a
+                                                    href="#"
+                                                    class="cursor-pointer hover:text-astral-900"
+                                                >
+                                                    <i
+                                                        class="ri-facebook-circle-fill"
+                                                    ></i>
+                                                </a>
+                                                <a
+                                                    href="#"
+                                                    class="cursor-pointer hover:text-astral-900"
+                                                >
+                                                    <i
+                                                        class="ri-instagram-fill"
+                                                    ></i>
+                                                </a>
+                                                <a
+                                                    href="#"
+                                                    class="cursor-pointer hover:text-astral-900"
+                                                >
+                                                    <i
+                                                        class="ri-pinterest-fill"
+                                                    ></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Paginación -->
+                    <div class="swiper-pagination"></div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </section>
+        <!-- Fin Equipo -->
+
+        <!-- Faq -->
+        <section class="faq">
+            <div class="container mx-auto">
+                <h2
+                    class="faq__title h2 text-center mb-[50px] text-matisse-800"
+                >
+                    Tienes alguna duda?
+                </h2>
+                <!-- Items Wrapper -->
+                <div class="max-w-5xl mx-auto">
+                    <!-- Item -->
+                    <div
+                        class="faq__item px-[30px] pt-7 pb-4 border-b cursor-pointer select-none"
+                    >
+                        <!-- Título & Icono -->
+                        <div
+                            class="flex items-center justify-between mb-[10px]"
+                        >
+                            <h4 class="h4">Esta es una duda para el diseño</h4>
+                            <div class="faq__btn text-astral-900">
+                                <i class="ri-add-fill text-2xl"></i>
+                            </div>
+                        </div>
+                        <!-- Respuesta -->
+                        <div class="faq__answer h-0 overflow-hidden">
+                            <p class="font-light">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Tenetur ipsum, voluptates
+                                laborum quod veritatis magni et placeat dicta
+                                maiores. Voluptatem necessitatibus non unde
+                                natus, quo laudantium est in delectus maiores?
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <div
+                        class="faq__item px-[30px] pt-7 pb-4 border-b cursor-pointer select-none"
+                    >
+                        <!-- Título & Icono -->
+                        <div
+                            class="flex items-center justify-between mb-[10px]"
+                        >
+                            <h4 class="h4">
+                                Esta es una segunda duda para el diseño
+                            </h4>
+                            <div class="faq__btn text-astral-900">
+                                <i class="ri-add-fill text-2xl"></i>
+                            </div>
+                        </div>
+                        <!-- Respuesta -->
+                        <div class="faq__answer h-0 overflow-hidden">
+                            <p class="font-light">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Tenetur ipsum, voluptates
+                                laborum quod veritatis magni et placeat dicta
+                                maiores. Voluptatem necessitatibus non unde
+                                natus, quo laudantium est in delectus maiores?
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <div
+                        class="faq__item px-[30px] pt-7 pb-4 border-b cursor-pointer select-none"
+                    >
+                        <!-- Título & Icono -->
+                        <div
+                            class="flex items-center justify-between mb-[10px]"
+                        >
+                            <h4 class="h4">
+                                Esta es una tercera duda para el diseño
+                            </h4>
+                            <div class="faq__btn text-astral-900">
+                                <i class="ri-add-fill text-2xl"></i>
+                            </div>
+                        </div>
+                        <!-- Respuesta -->
+                        <div class="faq__answer h-0 overflow-hidden">
+                            <p class="font-light">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Tenetur ipsum, voluptates
+                                laborum quod veritatis magni et placeat dicta
+                                maiores. Voluptatem necessitatibus non unde
+                                natus, quo laudantium est in delectus maiores?
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <div
+                        class="faq__item px-[30px] pt-7 pb-4 border-b cursor-pointer select-none"
+                    >
+                        <!-- Título & Icono -->
+                        <div
+                            class="flex items-center justify-between mb-[10px]"
+                        >
+                            <h4 class="h4">
+                                Esta es una cuarta duda para el diseño
+                            </h4>
+                            <div class="faq__btn text-astral-900">
+                                <i class="ri-add-fill text-2xl"></i>
+                            </div>
+                        </div>
+                        <!-- Respuesta -->
+                        <div class="faq__answer h-0 overflow-hidden">
+                            <p class="font-light">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Tenetur ipsum, voluptates
+                                laborum quod veritatis magni et placeat dicta
+                                maiores. Voluptatem necessitatibus non unde
+                                natus, quo laudantium est in delectus maiores?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin Faq -->
+
+        <!-- Departamentos -->
+        <section class="departaments section">
+            <div
+                class="departaments__bg bg-departaments bg-cover xl:bg-auto bg-center bg-no-repeat max-w-[1466px] mx-4 xl:mx-auto rounded-[20px] px-6 xl:px-0 py-12 xl:pt-[80px] xl:pb-[90px] relative min-h-[588px] flex items-center"
+            >
+                <div class="departaments__container container mx-auto">
+                    <div class="flex flex-col xl:flex-row gap-x-5">
+                        <div
+                            class="xl:w-[310px] flex flex-col gap-y-[30px] xl:gap-y-[80px] font-medium uppercase text-center xl:text-left text-base text-[#9ab4b7] xl:pt-3 xl:text-[17px] mb-[50px] xl:mb-0"
+                        >
+                            <ul class="xl:mt-16">
+                                <li class="xl:h-[60px]">
+                                    <a
+                                        href="#tab1"
+                                        class="cursor-pointer hover:text-astral-900 transition-all"
+                                        id="tab1"
+                                        >Representación legal</a
+                                    >
+                                </li>
+                                <li class="xl:h-[60px]">
+                                    <a
+                                        href="#tab2"
+                                        class="cursor-pointer hover:text-astral-900 transition-all"
+                                        id="tab2"
+                                        >Constitución de empresas</a
+                                    >
+                                </li>
+                                <li class="xl:h-[60px]">
+                                    <a
+                                        href="#tab3"
+                                        class="cursor-pointer hover:text-astral-900 transition-all"
+                                        id="tab3"
+                                        >Asesorías legales</a
+                                    >
+                                </li>
+                                <li class="xl:h-[60px]">
+                                    <a
+                                        href="#tab4"
+                                        class="cursor-pointer hover:text-astral-900 transition-all"
+                                        id="tab4"
+                                        >Dermatología</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="xl:w-[640px]">
+                            <div class="overflow-hidden">
+                                <section id="tab1-content" class="tab-content">
+                                    <!-- Título -->
+                                    <h2
+                                        class="h2 mb-[20px] text-center xl:text-left text-matisse-800"
+                                    >
+                                        Representación legal
+                                    </h2>
+                                    <p
+                                        class="mb-[30px] font-light text-center xl:text-left"
+                                    >
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Ab amet laudantium
+                                        debitis expedita earum! Minus deleniti,
+                                        neque molestias illum cumque libero quas
+                                        laboriosam perferendis dolorem corrupti,
+                                        ipsa non. Aspernatur, dolores?<br /><br />Lorem
+                                        ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Unde vel consequuntur,
+                                        perferendis corporis praesentium rerum,
+                                        incidunt quasi sunt esse voluptatem
+                                        suscipit soluta eaque, distinctio eius
+                                        dignissimos ipsam quia dolorum dolor!
+                                    </p>
+                                    <div
+                                        class="flex flex-col xl:flex-row items-center xl:justify-between max-w-[555px] mb-[50px] mx-auto xl:mx-0"
+                                    >
+                                        <div
+                                            class="text-astral-900 xl:border-r border-[#dcdcdc] xl:pr-6"
+                                        >
+                                            grupo 1
+                                        </div>
+                                        <div
+                                            class="text-astral-900 xl:border-r border-[#dcdcdc] xl:pr-6"
+                                        >
+                                            Grupo 2
+                                        </div>
+                                        <div class="text-astral-900">
+                                            Grupo 3
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="btn btn-lg btn-astral mx-auto xl:mx-0 float-none xl:float-end"
+                                    >
+                                        Saber más
+                                    </button>
+                                </section>
+                                <section
+                                    id="tab2-content"
+                                    class="tab-content hidden"
+                                >
+                                    <!-- Título -->
+                                    <h2
+                                        class="h2 mb-[20px] text-center xl:text-left text-matisse-800"
+                                    >
+                                        Constitución de empresas
+                                    </h2>
+                                    <p
+                                        class="mb-[30px] font-light text-center xl:text-left"
+                                    >
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Ab amet laudantium
+                                        debitis expedita earum! Minus deleniti,
+                                        neque molestias illum cumque libero quas
+                                        laboriosam perferendis dolorem corrupti,
+                                        ipsa non. Aspernatur, dolores?<br /><br />Lorem
+                                        ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Unde vel consequuntur,
+                                        perferendis corporis praesentium rerum,
+                                    </p>
+                                    <div
+                                        class="flex flex-col xl:flex-row items-center xl:justify-between max-w-[555px] mb-[50px] mx-auto xl:mx-0"
+                                    >
+                                        <div
+                                            class="text-astral-900 xl:border-r border-[#dcdcdc] xl:pr-6"
+                                        >
+                                            grupo 1
+                                        </div>
+                                        <div
+                                            class="text-astral-900 xl:border-r border-[#dcdcdc] xl:pr-6"
+                                        >
+                                            Grupo 2
+                                        </div>
+                                        <div class="text-astral-900">
+                                            Grupo 3
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="btn btn-lg btn-astral mx-auto xl:mx-0 float-none xl:float-end"
+                                    >
+                                        Saber más
+                                    </button>
+                                </section>
+                                <section
+                                    id="tab3-content"
+                                    class="tab-content hidden"
+                                >
+                                    <!-- Título -->
+                                    <h2
+                                        class="h2 mb-[20px] text-center xl:text-left text-matisse-800"
+                                    >
+                                        Asesorías legales
+                                    </h2>
+                                    <p
+                                        class="mb-[30px] font-light text-center xl:text-left"
+                                    >
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Ab amet laudantium
+                                        debitis expedita earum! Minus deleniti,
+                                        neque molestias illum cumque libero quas
+                                        laboriosam perferendis dolorem corrupti,
+                                        ipsa non. Aspernatur, dolores?
+                                    </p>
+                                    <div
+                                        class="flex flex-col xl:flex-row items-center xl:justify-between max-w-[555px] mb-[50px] mx-auto xl:mx-0"
+                                    >
+                                        <div
+                                            class="text-astral-900 xl:border-r border-[#dcdcdc] xl:pr-6"
+                                        >
+                                            grupo 1
+                                        </div>
+                                        <div
+                                            class="text-astral-900 xl:border-r border-[#dcdcdc] xl:pr-6"
+                                        >
+                                            Grupo 2
+                                        </div>
+                                        <div class="text-astral-900">
+                                            Grupo 3
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="btn btn-lg btn-astral mx-auto xl:mx-0 float-none xl:float-end"
+                                    >
+                                        Saber más
+                                    </button>
+                                </section>
+                                <section
+                                    id="tab4-content"
+                                    class="tab-content hidden"
+                                >
+                                    <!-- Título -->
+                                    <h2
+                                        class="h2 mb-[20px] text-center xl:text-left text-matisse-800"
+                                    >
+                                        Auditoria financiera
+                                    </h2>
+                                    <p
+                                        class="mb-[30px] font-light text-center xl:text-left"
+                                    >
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Ab amet laudantium
+                                        debitis expedita earum! Minus deleniti,
+                                        neque molestias illum cumque libero quas
+                                        laboriosam perferendis dolorem corrupti,
+                                        ipsa non. Aspernatur, dolores?<br /><br />Lorem
+                                        ipsum dolor sit amet, consectetur
+                                        adipisicing elit.
+                                    </p>
+                                    <div
+                                        class="flex flex-col xl:flex-row items-center xl:justify-between max-w-[555px] mb-[50px] mx-auto xl:mx-0"
+                                    >
+                                        <div
+                                            class="text-astral-900 xl:border-r border-[#dcdcdc] xl:pr-6"
+                                        >
+                                            grupo 1
+                                        </div>
+                                        <div
+                                            class="text-astral-900 xl:border-r border-[#dcdcdc] xl:pr-6"
+                                        >
+                                            Grupo 2
+                                        </div>
+                                        <div class="text-astral-900">
+                                            Grupo 3
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="btn btn-lg btn-astral mx-auto xl:mx-0 float-none xl:float-end"
+                                    >
+                                        Saber más
+                                    </button>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin Departamentos -->
+
+        <!-- Blog -->
+        <section class="blog">
+            <div class="container mx-auto">
+                <h2
+                    class="blog__title h2 mb-[50px] text-center xl:text-left text-matisse-800"
+                >
+                    Últimos Posts
+                </h2>
+                <!-- Posts -->
+                <div
+                    class="flex flex-col xl:flex-row gap-y-0 items-center xl:justify-between mb-[50px]"
+                >
+                    <!-- post 1 -->
+                    <div
+                        class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer group"
+                    >
+                        <!-- Img -->
+                        <div class="relative overflow-hidden">
+                            <img
+                                class="group-hover:scale-110 transition-all duration-500"
+                                src="assets/img/blog/img-1.png"
+                                alt=""
+                            />
+
+                            <!-- Badge -->
+                            <div
+                                class="bg-matisse-500 absolute bottom-0 left-0 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[18px]"
+                            ></div>
+                        </div>
+
+                        <!-- Text0 -->
+                        <div class="px-5 py-6">
+                            <!-- Fecha -->
+                            <div class="mb-4">Enero 2, 2024</div>
+                            <!-- Título -->
+                            <div class="h4 mb-[10px]">
+                                Título para el Post 1
+                            </div>
+                            <!-- Descripción -->
+                            <p class="font-light">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Soluta, voluptatem atque
+                                tenetur cum voluptates molestiae!
+
+                                <a
+                                    href="#"
+                                    class="italic underline text-[#4c5354]"
+                                    >Leer Más</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- post 2 -->
+                    <div
+                        class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer group"
+                    >
+                        <!-- Img -->
+                        <div class="relative overflow-hidden">
+                            <img
+                                class="group-hover:scale-110 transition-all duration-500"
+                                src="assets/img/blog/img-2.png"
+                                alt=""
+                            />
+
+                            <!-- Badge -->
+                            <div
+                                class="bg-matisse-500 absolute bottom-0 left-0 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[18px]"
+                            ></div>
+                        </div>
+
+                        <!-- Text0 -->
+                        <div class="px-5 py-6">
+                            <!-- Fecha -->
+                            <div class="mb-4">Enero 2, 2024</div>
+                            <!-- Título -->
+                            <div class="h4 mb-[10px]">
+                                Título para el Post 2
+                            </div>
+                            <!-- Descripción -->
+                            <p class="font-light">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Soluta, voluptatem atque
+                                tenetur cum voluptates molestiae!
+
+                                <a
+                                    href="#"
+                                    class="italic underline text-[#4c5354]"
+                                    >Leer Más</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- post 3 -->
+                    <div
+                        class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer group"
+                    >
+                        <!-- Img -->
+                        <div class="relative overflow-hidden">
+                            <img
+                                class="group-hover:scale-110 transition-all duration-500"
+                                src="assets/img/blog/img-3.png"
+                                alt=""
+                            />
+
+                            <!-- Badge -->
+                            <div
+                                class="bg-matisse-500 absolute bottom-0 left-0 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[18px]"
+                            ></div>
+                        </div>
+
+                        <!-- Text0 -->
+                        <div class="px-5 py-6">
+                            <!-- Fecha -->
+                            <div class="mb-4">Enero 2, 2024</div>
+                            <!-- Título -->
+                            <div class="h4 mb-[10px]">
+                                Título para el Post 3
+                            </div>
+                            <!-- Descripción -->
+                            <p class="font-light">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Soluta, voluptatem atque
+                                tenetur cum voluptates molestiae!
+
+                                <a
+                                    href="#"
+                                    class="italic underline text-[#4c5354]"
+                                    >Leer Más</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin Blog -->
+
+        <!-- Brands -->
+        <section class="brands section">
+            <div class="container mx-auto">
+                <div
+                    class="flex flex-col xl:flex-row gap-y-12 xl:gap-y-6 justify-between items-center"
+                >
+                    <img
+                        class="brands__logo"
+                        src="assets/img/brands/brand-1.svg"
+                        alt=""
+                    />
+                    <img
+                        class="brands__logo"
+                        src="assets/img/brands/brand-2.svg"
+                        alt=""
+                    />
+                    <img
+                        class="brands__logo"
+                        src="assets/img/brands/brand-3.svg"
+                        alt=""
+                    />
+                    <img
+                        class="brands__logo"
+                        src="assets/img/brands/brand-4.svg"
+                        alt=""
+                    />
+                    <img
+                        class="brands__logo"
+                        src="assets/img/brands/brand-5.svg"
+                        alt=""
+                    />
+                </div>
+            </div>
+        </section>
+        <!-- Fin Brands -->
+
+        <!-- Noticias -->
+        <section
+            class="newsletter bg-astral-900 md:h-[444px] py-12 flex items-center relative overflow-hidden"
+        >
+            <!-- Patron -->
+            <div class="absolute">
+                <img src="assets/img/newsletter/pattern.svg" alt="" />
+            </div>
+            <!-- Container -->
+            <div class="newsletter__container container mx-auto">
+                <!-- Wrapper -->
+                <div
+                    class="flex flex-col lg:flex-row lg:items-center lg:gap-x-[58px]"
+                >
+                    <!-- Texto -->
+                    <div class="flex-1 z-10 text-center md:text-left">
+                        <div
+                            class="text-base uppercase text-white tracking-[2.24px] font-medium"
+                        >
+                            Noticias
+                        </div>
+                        <h1 class="h1 mb-4 text-white">
+                            Suscribete para más noticias
+                        </h1>
+                    </div>
+                    <!-- Formulario -->
+                    <form class="flex-1">
+                        <div class="flex flex-col md:flex-row relative gap-y-4">
+                            <input
+                                type="text"
+                                placeholder="Su dirección de Email"
+                                class="rounded-full w-full h-[66px] bg-transparent border-2 border-white outline-none pl-[30px] placeholder:text-white focus:text-white"
+                            />
+
+                            <button
+                                class="btn btn-lg btn-white md:absolute right-0"
+                            >
+                                Suscribirse
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Fin Noticias -->
+
+        <!-- Footer -->
+        <footer class="footer pt-12 xl:pt-[150px]">
+            <div class="container mx-auto pb-12 xl:pb-[100px]">
+                <div class="flex flex-col xl:flex-row gap-x-5 gap-y-10">
+                    <!-- Sección Contacto -->
+                    <div class="footer__item flex-1">
+                        <!-- Logo -->
+                        <a href=""
+                            ><img
+                                mb-[30px]
+                                src="assets/img/header/logo.svg"
+                                alt=""
+                        /></a>
+                        <!-- Dexcripción -->
+                        <p class="mb-[20px]">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Omnis obcaecati
+                        </p>
+                        <!-- Ubicción, email, teléfono -->
+                        <div class="flex flex-col gap-y-3 mb-10">
+                            <div class="flex items-center gap-x-[6px]">
+                                <i
+                                    class="ri-map-pin-fill text-[24px] text-astral-900"
+                                ></i>
+                                <div class="">Dirección, 1234, Santiago</div>
+                            </div>
+                            <div class="flex items-center gap-x-[6px]">
+                                <i
+                                    class="ri-mail-fill text-[24px] text-astral-900"
+                                ></i>
+                                <div class="">correo@correo.com</div>
+                            </div>
+                            <div class="flex items-center gap-x-[6px]">
+                                <i
+                                    class="ri-phone-fill text-[24px] text-astral-900"
+                                ></i>
+                                <div class="">+56 9 1234 5678</div>
+                            </div>
+                        </div>
+                        <!-- Social -->
+                        <div class="flex gap-[14px] text-[30px]">
+                            <div
+                                class="p-[10px] rounded-[10px] shadow-custom2 text-matisse-500 hover:text-astral-900 cursor-pointer transition-all"
+                            >
+                                <i class="ri-facebook-circle-fill"></i>
+                            </div>
+                            <div
+                                class="p-[10px] rounded-[10px] shadow-custom2 text-matisse-500 hover:text-astral-900 cursor-pointer transition-all"
+                            >
+                                <i class="ri-instagram-fill"></i>
+                            </div>
+                            <div
+                                class="p-[10px] rounded-[10px] shadow-custom2 text-matisse-500 hover:text-astral-900 cursor-pointer transition-all"
+                            >
+                                <i class="ri-twitter-fill"></i>
+                            </div>
+                            <div
+                                class="p-[10px] rounded-[10px] shadow-custom2 text-matisse-500 hover:text-astral-900 cursor-pointer transition-all"
+                            >
+                                <i class="ri-linkedin-box-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sección Accesos Rapidos -->
+                    <div class="footer__item flex-1">
+                        <h4 class="h4 mb-5">Accesos Rápidos</h4>
+                        <div class="flex gap-x-5">
+                            <!-- Lista 1 -->
+                            <ul class="flex-1 flex flex-col gap-y-5">
+                                <li>
+                                    <a
+                                        href=""
+                                        class="hover:text-astral-900 transition-all"
+                                        >Inicio</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href=""
+                                        class="hover:text-astral-900 transition-all"
+                                        >Equipo</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href=""
+                                        class="hover:text-astral-900 transition-all"
+                                        >Preguntas frecuentes</a
+                                    >
+                                </li>
+                            </ul>
+                            <!-- Lista 1 -->
+                            <ul class="flex-1 flex flex-col gap-y-5">
+                                <li>
+                                    <a
+                                        href=""
+                                        class="hover:text-astral-900 transition-all"
+                                        >Servicios</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href=""
+                                        class="hover:text-astral-900 transition-all"
+                                        >Blog</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Horario Atención -->
+                    <div class="footer__item flex-1">
+                        <h4 class="h4 mb-5">Horario de atención</h4>
+                        <!-- Lista -->
+                        <div class="flex flex-col gap-5">
+                            <!-- Item -->
+                            <div class="flex-1">
+                                <div
+                                    class="flex justify-between items-center border-b pb-[10px]"
+                                >
+                                    <div class="">Lunes a Viernes</div>
+                                    <div class="text-astral-900 font-medium">
+                                        8:30 - 18:30
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item -->
+                            <div class="flex-1">
+                                <div
+                                    class="flex justify-between items-center border-b pb-[10px]"
+                                >
+                                    <div class="">Sabado</div>
+                                    <div class="text-astral-900 font-medium">
+                                        8:30 - 18:30
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="py-[30px] border-t">
+                <div class="container mx-auto text-center">
+                    <div class="font-light text-base">
+                        &copy; 2024 IdeAppsWeb - Derechos reservados
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Fin Footer -->
+
+        <!-- Temp div -->
+        <!-- <div class="h-[4000px]"></div> -->
+
+        <!-- Swipper -->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <!-- Scroll Reveal -->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        <!-- Main -->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
